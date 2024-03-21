@@ -32,4 +32,8 @@ public class UserService {
             return list;
         }
     }
+
+    public List<User> findAll(){
+        return getList();
+    }
 }

@@ -24,6 +24,12 @@ public class UserController {
         return service.getUserById(id);
     }
 
+    @GetMapping("/findAll")
+    public List<User> gteUserById() {
+
+        return service.findAll();
+    }
+
     @GetMapping("/search")
     public List<User> gteUserByName(@RequestParam(value = "name", required = false) String name) {
         return service.getUserByName(name);
